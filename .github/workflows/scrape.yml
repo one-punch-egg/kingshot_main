@@ -1,1 +1,40 @@
+name: Kingshot Reward Scraper main
 
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Runs every 5 minutes (GitHub's minimum limit)
+  workflow_dispatch:       # Allows you to click "Run workflow" manually anytime
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # This shows up in your GitHub Actions logs to prove it ran
+      - name: Heartbeat
+        run: echo "Bot heartbeat - Checking website at $(date)"
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Scraper
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: python bot.py
+
+      - name: Commit and Push Memory
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          # Only adds the memory file so logs stay clean
+          git add message_ids.json
+          # If no codes changed, the commit will be skipped safely
+          git commit -m "Update message status memory [skip ci]" || exit 0
+          git push
