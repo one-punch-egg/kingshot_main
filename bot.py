@@ -6,7 +6,7 @@ import json
 # --- CONFIGURATION ---
 URL = "https://kingshotrewards.com/"
 WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK")
-ID_MAP_FILE = "message_ids.json" 
+ID_MAP_FILE = "message_ids.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
@@ -89,3 +89,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+
