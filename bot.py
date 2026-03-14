@@ -56,7 +56,7 @@ def run():
     print(f"Checking {len(current_data)} codes (Cycle: Every 5 mins)...")
 
     for code, status in current_data:
-        content = f"@everyone new code: `{code}` - **{status}**"
+        content = f"<@&1482141454607454308> new code: `{code}` - **{status}**"
 
         # CASE 1: Brand New Code (Only post if Active on first discovery)
         if code not in msg_map:
