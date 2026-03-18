@@ -9,7 +9,7 @@ import requests
 URL = "https://kingshot.net/gift-codes"
 WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK")
 ID_MAP_FILE = "message_ids.json"
-ROLE_ID = "1479493265756524625" 
+ROLE_ID = "1482141454607454308" 
 
 def get_discord_timestamp(expiry_date_str):
     """Converts MM/DD/YYYY to Discord Relative Timestamp <t:unix:R>"""
