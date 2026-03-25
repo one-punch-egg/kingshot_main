@@ -41,7 +41,7 @@
     },
     "VIP777": {
         "id": "1477972576813842506",
-        "status": "EXPIRED"
+        "status": "ACTIVE"
     },
     "THUR0305": {
         "id": "1479098767020920984",
@@ -61,7 +61,7 @@
     },
     "OFFICIALSTORE": {
         "id": "1483301437105504300",
-        "status": "EXPIRED"
+        "status": "ACTIVE"
     },
     "KINGSHOTHBD": {
         "id": "1483423510570205314",
@@ -73,6 +73,6 @@
     },
     "syunnbun26jp": {
         "id": "1484477950245212234",
-        "status": "EXPIRED"
+        "status": "ACTIVE"
     }
 }
