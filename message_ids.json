@@ -81,6 +81,10 @@
     },
     "KS0330": {
         "id": "1488064102579441777",
+        "status": "EXPIRED"
+    },
+    "OFFICIALSTORE04": {
+        "id": "1488720927184257219",
         "status": "ACTIVE"
     }
 }
