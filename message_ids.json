@@ -41,7 +41,7 @@
     },
     "VIP777": {
         "id": "1477972576813842506",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "THUR0305": {
         "id": "1479098767020920984",
@@ -85,7 +85,7 @@
     },
     "OFFICIALSTORE04": {
         "id": "1488720927184257219",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "NOFOOLIN": {
         "id": "1488871917363400796",
@@ -93,6 +93,6 @@
     },
     "BUNNY405": {
         "id": "1490170466298757254",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     }
 }
