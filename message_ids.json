@@ -101,6 +101,10 @@
     },
     "WEEKENDPLAN": {
         "id": "1492883378716803173",
+        "status": "EXPIRED"
+    },
+    "KSPRAWNING": {
+        "id": "1494916762238718003",
         "status": "ACTIVE"
     }
 }
