@@ -113,14 +113,18 @@
     },
     "LOVETHEPLANET": {
         "id": "1496482083541876736",
-        "status": "EXPIRED"
+        "status": "ACTIVE"
     },
     "0425FORU": {
         "id": "1497408183923245086",
-        "status": "EXPIRED"
+        "status": "ACTIVE"
     },
     "KS0426": {
         "id": "1497827208818065469",
+        "status": "ACTIVE"
+    },
+    "KS0425": {
+        "id": "1498092712291860520",
         "status": "ACTIVE"
     }
 }
