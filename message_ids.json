@@ -129,6 +129,10 @@
     },
     "OFFICIALSTORE9": {
         "id": "1498505447668322374",
+        "status": "EXPIRED"
+    },
+    "KSGW26JP": {
+        "id": "1499339726128418897",
         "status": "ACTIVE"
     }
 }
