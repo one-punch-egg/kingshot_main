@@ -105,7 +105,7 @@
     },
     "KSPRAWNING": {
         "id": "1494916762238718003",
-        "status": "EXPIRED"
+        "status": "ACTIVE"
     },
     "KS0420": {
         "id": "1495670516655194263",
@@ -157,6 +157,6 @@
     },
     "KS0518": {
         "id": "1505816120974643262",
-        "status": "EXPIRED"
+        "status": "ACTIVE"
     }
 }
