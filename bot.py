@@ -2,6 +2,7 @@ import cloudscraper
 import re
 import os
 import json
+from datetime import datetime
 import requests
 
 # --- CONFIGURATION ---
@@ -9,6 +10,23 @@ URL = "https://kingshot.net/gift-codes"
 WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK")
 ID_MAP_FILE = "message_ids.json"
 ROLE_ID = "1482141454607454308" 
+
+def get_discord_timestamp(expiry_date_str):
+    """Converts MM/DD/YYYY to Discord Relative Timestamp <t:unix:R>.
+    Returns None if the input is a fake placeholder like '7 months'."""
+    try:
+        clean_str = expiry_date_str.strip()
+        
+        # CRITICAL FIX: Only parse if it strictly matches a date pattern (e.g., MM/DD/YYYY)
+        # This filters out inaccurate site fallbacks like "7 months"
+        if not re.match(r'^\d{1,2}/\d{1,2}/\d{4}$', clean_str):
+            return None
+            
+        dt = datetime.strptime(clean_str, "%m/%d/%Y")
+        return f"<t:{int(dt.timestamp())}:R>"
+    except Exception as e:
+        print(f"Date Parse Error: {e}")
+        return None
 
 def get_code_data():
     try:
@@ -30,16 +48,8 @@ def get_code_data():
         results = []
         for code_text, expiry_date in matches:
             code = code_text.strip()
-            raw_expiry = expiry_date.strip()
-            
-            # CRITICAL FIX: Only treat it as an expiry date if it matches a date format (like MM/DD/YYYY)
-            # If it says "7 months", text, or is empty, we set it to None so we don't post misinformation.
-            if re.match(r'^\d{1,2}/\d{1,2}/\d{4}$', raw_expiry):
-                expiry = f"expires {raw_expiry}"
-            else:
-                expiry = None 
-                
-            results.append({"code": code, "expiry": expiry})
+            time_tag = get_discord_timestamp(expiry_date)
+            results.append({"code": code, "time_tag": time_tag})
             
         print(f"Success! Found {len(results)} active codes on site.")
         return results
@@ -70,11 +80,11 @@ def run():
     # --- PART A: Handle New or Still Active Codes ---
     for code in reversed(list(active_codes_on_site.keys())):
         item = active_codes_on_site[code]
-        expiry = item["expiry"]
+        time_tag = item["time_tag"]
         
-        # Build message context dynamically based on whether a real date exists
-        if expiry:
-            content = f"<@&{ROLE_ID}> new code: `{code}` - {expiry}"
+        # Format the message conditionally based on whether a valid countdown tag exists
+        if time_tag:
+            content = f"<@&{ROLE_ID}> new code: `{code}` - expires {time_tag}"
         else:
             content = f"<@&{ROLE_ID}> new code: `{code}`"
 
