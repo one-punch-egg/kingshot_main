@@ -8,7 +8,7 @@ import requests
 URL = "https://kingshot.net/gift-codes"
 WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK")
 ID_MAP_FILE = "message_ids.json"
-ROLE_ID = "1469321868589793429" 
+ROLE_ID = "1469321868589793429"
 
 def get_code_data():
     try:
