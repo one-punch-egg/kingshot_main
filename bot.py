@@ -12,13 +12,10 @@ ID_MAP_FILE = "message_ids.json"
 ROLE_ID = "1482141454607454308" 
 
 def get_discord_timestamp(expiry_date_str):
-    """Converts MM/DD/YYYY to Discord Relative Timestamp <t:unix:R>.
-    Returns None if the input is a fake placeholder like '7 months'."""
+    """Converts MM/DD/YYYY to Discord Relative Timestamp <t:unix:R>."""
     try:
         clean_str = expiry_date_str.strip()
-        
-        # CRITICAL FIX: Only parse if it strictly matches a date pattern (e.g., MM/DD/YYYY)
-        # This filters out inaccurate site fallbacks like "7 months"
+        # Strictly ensure it's a valid date pattern (e.g. MM/DD/YYYY)
         if not re.match(r'^\d{1,2}/\d{1,2}/\d{4}$', clean_str):
             return None
             
@@ -41,14 +38,28 @@ def get_code_data():
             return []
             
         html = response.text
-        # Matches the specific HTML structure provided
-        pattern = r'font-mono text-xl font-bold tracking-wider">(.*?)<\/p>.*?Expires: (.*?)<\/span>'
-        matches = re.findall(pattern, html, re.DOTALL)
+        
+        # 1. Split the HTML into individual card blocks so we can inspect them one by one
+        # This prevents missing a code just because it lacks an "Expires" row.
+        card_pattern = r'(font-mono text-xl font-bold tracking-wider">.*?<\/div>\s*<\/div>\s*<\/div>)'
+        cards = re.findall(card_pattern, html, re.DOTALL)
         
         results = []
-        for code_text, expiry_date in matches:
-            code = code_text.strip()
-            time_tag = get_discord_timestamp(expiry_date)
+        for card in cards:
+            # 2. Extract the Gift Code Name
+            code_match = re.search(r'font-mono text-xl font-bold tracking-wider">(.*?)<\/p>', card)
+            if not code_match:
+                continue
+            code = code_match.group(1).strip()
+            
+            # 3. Check if an Expiry row actually exists inside this specific card block
+            expiry_match = re.search(r'Expires:\s*([\d/]+)<\/span>', card)
+            
+            if expiry_match:
+                time_tag = get_discord_timestamp(expiry_match.group(1))
+            else:
+                time_tag = None  # No date text printed on the card at all!
+                
             results.append({"code": code, "time_tag": time_tag})
             
         print(f"Success! Found {len(results)} active codes on site.")
@@ -82,7 +93,7 @@ def run():
         item = active_codes_on_site[code]
         time_tag = item["time_tag"]
         
-        # Format the message context safely
+        # Format the message safely
         if time_tag:
             content = f"<@&{ROLE_ID}> new code: `{code}` - expires {time_tag}"
         else:
@@ -100,8 +111,7 @@ def run():
                 print(f"❌ Post Error: {e}")
         
         else:
-            # FORCE UPDATE: If the message exists but contains old bad text (like "7 months"),
-            # we force a PATCH to clean it up right away.
+            # FORCE UPDATE: If the message exists but contains old text, fix it immediately!
             msg_id = msg_map[code]["id"]
             last_content = msg_map[code].get("last_content", "")
             
@@ -111,7 +121,7 @@ def run():
                     if res.status_code == 200:
                         msg_map[code]["status"] = "ACTIVE"
                         msg_map[code]["last_content"] = content
-                        print(f"🔄 Cleaned/Updated message for: {code}")
+                        print(f"🔄 Corrected message text for: {code}")
                 except Exception as e:
                     print(f"❌ Update Error: {e}")
 
@@ -119,11 +129,7 @@ def run():
     for code, data in msg_map.items():
         if code not in active_codes_on_site and data.get("status") == "ACTIVE":
             msg_id = data["id"]
-            
-            # Formatting for EXPIRED status
-            expired_content = (
-                f"code: `{code}` has **EXPIRED ❌**"
-            )
+            expired_content = f"code: `{code}` has **EXPIRED ❌**"
             
             try:
                 res = session.patch(f"{WEBHOOK_URL}/messages/{msg_id}", json={"content": expired_content})
