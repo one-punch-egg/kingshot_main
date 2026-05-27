@@ -1,23 +1,19 @@
 {
     "KINGSTORE210": {
         "id": "1471822043354894511",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `KINGSTORE210`"
+        "status": "EXPIRED"
     },
     "THANKSJP26": {
         "id": "1471822044369915995",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `THANKSJP26`"
+        "status": "EXPIRED"
     },
     "KS260213": {
         "id": "1471822045603172363",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KS260213`"
+        "status": "EXPIRED"
     },
     "LOVEKS2026": {
         "id": "1472007021711589397",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `LOVEKS2026`"
+        "status": "EXPIRED"
     },
     "SPRINGFES217": {
         "id": "1473261533122527249",
@@ -25,8 +21,7 @@
     },
     "RAMADAN": {
         "id": "1473357167624065088",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `RAMADAN`"
+        "status": "EXPIRED"
     },
     "KS0225": {
         "id": "1476125399921590355",
@@ -34,13 +29,11 @@
     },
     "ITSFRIDAY227": {
         "id": "1476913092431708182",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `ITSFRIDAY227`"
+        "status": "EXPIRED"
     },
     "KS0302": {
         "id": "1477933563663093851",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KS0302`"
+        "status": "EXPIRED"
     },
     "0302FORU": {
         "id": "1477933565437153412",
@@ -48,18 +41,15 @@
     },
     "VIP777": {
         "id": "1477972576813842506",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `VIP777` - expires <t:1798675200:R>"
+        "status": "EXPIRED"
     },
     "THUR0305": {
         "id": "1479098767020920984",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `THUR0305`"
+        "status": "EXPIRED"
     },
     "CELEBRATEHER": {
         "id": "1480175834672140388",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `CELEBRATEHER`"
+        "status": "EXPIRED"
     },
     "DC500KWEMADEIT": {
         "id": "1480416175388102779",
@@ -67,8 +57,7 @@
     },
     "KS0315": {
         "id": "1482608472796172371",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `KS0315`"
+        "status": "EXPIRED"
     },
     "OFFICIALSTORE": {
         "id": "1483301437105504300",
@@ -76,8 +65,7 @@
     },
     "KINGSHOTHBD": {
         "id": "1483423510570205314",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KINGSHOTHBD`"
+        "status": "EXPIRED"
     },
     "EIDMUB2026": {
         "id": "1484138224262844607",
@@ -85,18 +73,15 @@
     },
     "syunnbun26jp": {
         "id": "1484477950245212234",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `syunnbun26jp`"
+        "status": "EXPIRED"
     },
     "FIREFRIDAY": {
         "id": "1486973163173580921",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `FIREFRIDAY`"
+        "status": "EXPIRED"
     },
     "KS0330": {
         "id": "1488064102579441777",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KS0330`"
+        "status": "EXPIRED"
     },
     "OFFICIALSTORE04": {
         "id": "1488720927184257219",
@@ -104,13 +89,11 @@
     },
     "NOFOOLIN": {
         "id": "1488871917363400796",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `NOFOOLIN`"
+        "status": "EXPIRED"
     },
     "BUNNY405": {
         "id": "1490170466298757254",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `BUNNY405`"
+        "status": "EXPIRED"
     },
     "KS0408": {
         "id": "1491323092746633287",
@@ -118,18 +101,15 @@
     },
     "WEEKENDPLAN": {
         "id": "1492883378716803173",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `WEEKENDPLAN`"
+        "status": "EXPIRED"
     },
     "KSPRAWNING": {
         "id": "1494916762238718003",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KSPRAWNING`"
+        "status": "EXPIRED"
     },
     "KS0420": {
         "id": "1495670516655194263",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KS0420`"
+        "status": "EXPIRED"
     },
     "LOVETHEPLANET": {
         "id": "1496482083541876736",
@@ -137,13 +117,11 @@
     },
     "0425FORU": {
         "id": "1497408183923245086",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `0425FORU`"
+        "status": "EXPIRED"
     },
     "KS0426": {
         "id": "1497827208818065469",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KS0426`"
+        "status": "EXPIRED"
     },
     "KS0425": {
         "id": "1498092712291860520",
@@ -151,8 +129,7 @@
     },
     "OFFICIALSTORE9": {
         "id": "1498505447668322374",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `OFFICIALSTORE9`"
+        "status": "EXPIRED"
     },
     "KSGW26JP": {
         "id": "1499339726128418897",
@@ -160,48 +137,39 @@
     },
     "WORKERPOWER": {
         "id": "1499736041848963143",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `WORKERPOWER`"
+        "status": "EXPIRED"
     },
     "Childrenday0505": {
         "id": "1501063600343879750",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `Childrenday0505`"
+        "status": "EXPIRED"
     },
     "BESTMOM2026": {
         "id": "1503005127613874246",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `BESTMOM2026`"
+        "status": "EXPIRED"
     },
     "LOVEFAMILY": {
         "id": "1504817040748183672",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `LOVEFAMILY`"
+        "status": "EXPIRED"
     },
     "OFFICIALSTORE516": {
         "id": "1505179425904267365",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `OFFICIALSTORE516`"
+        "status": "EXPIRED"
     },
     "KS0518": {
         "id": "1505816120974643262",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KS0518`"
+        "status": "EXPIRED"
     },
     "847EadKex": {
         "id": "1506193638139629619",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `847EadKex`"
+        "status": "EXPIRED"
     },
     "eK5B3kw7t": {
         "id": "1506384882505486547",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `eK5B3kw7t`"
+        "status": "EXPIRED"
     },
     "n4xeR7VGd": {
         "id": "1506386169045188671",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `n4xeR7VGd`"
+        "status": "EXPIRED"
     },
     "X43Q2EKBq": {
         "id": "1506391216256712706",
@@ -209,8 +177,7 @@
     },
     "Bw8NanVq8": {
         "id": "1506674316115316757",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `Bw8NanVq8`"
+        "status": "EXPIRED"
     },
     "rK9e6vKXu": {
         "id": "1506802653131444306",
@@ -218,197 +185,14 @@
     },
     "KS0524": {
         "id": "1507961544267399310",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KS0524`"
+        "status": "ACTIVE"
     },
     "OFFICIALSTORE27": {
         "id": "1508659911767101631",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `OFFICIALSTORE27` - expires <t:1780358400:R>"
+        "status": "ACTIVE"
     },
     "EIDALADHA0527": {
         "id": "1509167108964225186",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `EIDALADHA0527` - expires <t:1780185600:R>"
-    },
-    "LETSCLEANUP": {
-        "id": "1509179294167990564",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `LETSCLEANUP`"
-    },
-    "SORRYIMLATE": {
-        "id": "1509179295501652149",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `SORRYIMLATE`"
-    },
-    "GIVEUAGIFT": {
-        "id": "1509179296881704960",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `GIVEUAGIFT`"
-    },
-    "1INAMILLION": {
-        "id": "1509179297733148703",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `1INAMILLION`"
-    },
-    "COFFEEPOWER": {
-        "id": "1509179298488254615",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `COFFEEPOWER`"
-    },
-    "tgs2025ks1st": {
-        "id": "1509179299503018057",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `tgs2025ks1st`"
-    },
-    "Gaecheonjeol": {
-        "id": "1509179300077768736",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `Gaecheonjeol`"
-    },
-    "Hangul2025": {
-        "id": "1509179301726261268",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `Hangul2025`"
-    },
-    "BONAPPETIT": {
-        "id": "1509179302694879303",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `BONAPPETIT`"
-    },
-    "TGIF1016": {
-        "id": "1509179303559041144",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `TGIF1016`"
-    },
-    "HALLOWEEN25": {
-        "id": "1509179304842494033",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `HALLOWEEN25`"
-    },
-    "pepero": {
-        "id": "1509179306281140324",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `pepero`"
-    },
-    "TGIFISBACK": {
-        "id": "1509179308340412436",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `TGIFISBACK`"
-    },
-    "THEKINGSTORE": {
-        "id": "1509179309758218331",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `THEKINGSTORE`"
-    },
-    "THURMADNESS": {
-        "id": "1509179311457046641",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `THURMADNESS`"
-    },
-    "ENERGY0112": {
-        "id": "1509179313092821245",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `ENERGY0112`"
-    },
-    "TACODE0127": {
-        "id": "1509179314875273238",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `TACODE0127`"
-    },
-    "TGIFBOOST26": {
-        "id": "1509179316594806785",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `TGIFBOOST26`"
-    },
-    "KS2025award": {
-        "id": "1509179506211164302",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KS2025award`"
-    },
-    "TRICKORTREAT": {
-        "id": "1509179507268128934",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `TRICKORTREAT`"
-    },
-    "JackKaoAndKS": {
-        "id": "1509179509470138478",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `JackKaoAndKS`"
-    },
-    "TGIF1107": {
-        "id": "1509179511025959004",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `TGIF1107`"
-    },
-    "KSDC400K": {
-        "id": "1509179511663759411",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KSDC400K`"
-    },
-    "HELLOWORLD25": {
-        "id": "1509179512276127794",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `HELLOWORLD25`"
-    },
-    "TOGOVERNOR": {
-        "id": "1509179513668370532",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `TOGOVERNOR`"
-    },
-    "casualgame25": {
-        "id": "1509179515925037209",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `casualgame25`"
-    },
-    "STORELAUNCH": {
-        "id": "1509179517657415781",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `STORELAUNCH`"
-    },
-    "KINGSHOT13M": {
-        "id": "1509179519372890394",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `KINGSHOT13M`"
-    },
-    "KINGSHOTXMAS": {
-        "id": "1509179521230704762",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `KINGSHOTXMAS`"
-    },
-    "JPX27KFOLLOW": {
-        "id": "1509179522044661772",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `JPX27KFOLLOW`"
-    },
-    "SEEYOUIN2026": {
-        "id": "1509179523483304027",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `SEEYOUIN2026`"
-    },
-    "jpseijin26": {
-        "id": "1509179526272520403",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `jpseijin26`"
-    },
-    "KINGDOMSTAR": {
-        "id": "1509179528189181983",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `KINGDOMSTAR`"
-    },
-    "SAYCHEESE26": {
-        "id": "1509179529137230024",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `SAYCHEESE26`"
-    },
-    "WEEKENDJOY": {
-        "id": "1509179530034806997",
-        "status": "ACTIVE",
-        "last_content": "<@&1469321868589793429> new code: `WEEKENDJOY`"
-    },
-    "KS26TGS": {
-        "id": "1509179531590762618",
-        "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `KS26TGS`"
+        "status": "ACTIVE"
     }
 }
