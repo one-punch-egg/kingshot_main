@@ -8,7 +8,7 @@ import requests
 URL = "https://kingshot.net/gift-codes"
 WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK")
 ID_MAP_FILE = "message_ids.json"
-ROLE_ID = "1469321868589793429"
+ROLE_ID = "1479493265756524625" 
 
 def get_code_data():
     try:
@@ -24,24 +24,25 @@ def get_code_data():
             
         html = response.text
         
-        # Isolate individual card elements so codes are captured even if they lack expiration HTML lines
+        # 1. Isolate every single individual code block card element from the site layout source
         card_pattern = r'(font-mono text-xl font-bold tracking-wider">.*?<\/div>\s*<\/div>\s*<\/div>)'
         cards = re.findall(card_pattern, html, re.DOTALL)
         
         results = []
         for card in cards:
+            # 2. Extract the actual raw gift code alphanumeric key string
             code_match = re.search(r'font-mono text-xl font-bold tracking-wider">(.*?)<\/p>', card)
             if not code_match:
                 continue
             code = code_match.group(1).strip()
             
-            # Extract date explicitly ONLY if it is an actual date string format (MM/DD/YYYY)
-            expiry_match = re.search(r'Expires:\s*(\d{1,2}/\d{1,2}/\d{4})<\/span>', card)
+            # 3. Check for specific date configurations (MM/DD/YYYY) inside the captured block element
+            expiry_match = re.search(r'Expires:\s*(\d{1,2}/\d{1,2}/\d{4})', card)
             expiry = expiry_match.group(1) if expiry_match else None
                 
             results.append({"code": code, "expiry": expiry})
             
-        print(f"Success! Found {len(results)} active codes on site.")
+        print(f"Success! Scraped {len(results)} total active codes from the page layout.")
         return results
     except Exception as e:
         print(f"Scrape Error: {e}")
@@ -49,10 +50,10 @@ def get_code_data():
 
 def run():
     if not WEBHOOK_URL:
-        print("❌ Error: WEBHOOK_URL missing.")
+        print("❌ Error: WEBHOOK_URL environment variable missing.")
         return
 
-    # 1. Load Memory
+    # 1. Load Local State Sync Log
     msg_map = {}
     if os.path.exists(ID_MAP_FILE):
         try:
@@ -61,36 +62,36 @@ def run():
         except:
             msg_map = {}
 
-    # 2. Get Current Data
+    # 2. Parse Valid Targets 
     current_data = get_code_data()
     active_codes_on_site = {item["code"]: item for item in current_data}
     
     session = requests.Session()
 
-    # --- PART A: Handle New or Still Active Codes ---
+    # --- PART A: Processing Live / Added Web Entries ---
     for code in reversed(list(active_codes_on_site.keys())):
         item = active_codes_on_site[code]
         expiry = item["expiry"]
         
-        # Construct content string safely based on real dates
+        # Build completely static string layouts without relative timer variables
         if expiry:
             content = f"<@&{ROLE_ID}> new code: `{code}` - expires {expiry}"
         else:
             content = f"<@&{ROLE_ID}> new code: `{code}`"
 
         if code not in msg_map:
-            # POST NEW
+            # Dispatch completely new individual text payload block
             try:
                 res = session.post(f"{WEBHOOK_URL}?wait=true", json={"content": content})
                 if res.status_code in [200, 201]:
                     msg_id = res.json().get("id")
                     msg_map[code] = {"id": msg_id, "status": "ACTIVE", "last_content": content}
-                    print(f"✅ Posted: {code}")
+                    print(f"✅ Dispatched unique entry post for: {code}")
             except Exception as e:
-                print(f"❌ Post Error: {e}")
+                print(f"❌ Post Transmission Error: {e}")
         
         else:
-            # Correct structural text on messages already active in the tracking cache
+            # Sync context variations if prior memory cache mismatches actual live conditions
             msg_id = msg_map[code]["id"]
             last_content = msg_map[code].get("last_content", "")
             
@@ -100,11 +101,11 @@ def run():
                     if res.status_code == 200:
                         msg_map[code]["status"] = "ACTIVE"
                         msg_map[code]["last_content"] = content
-                        print(f"🔄 Corrected text data for active code: {code}")
+                        print(f"🔄 Corrected and verified data synchronization for code: {code}")
                 except:
                     pass
 
-    # --- PART B: Handle Expired Codes (Gone from site) ---
+    # --- PART B: Retracting Terminated Web Entries ---
     for code, data in msg_map.items():
         if code not in active_codes_on_site and data.get("status") == "ACTIVE":
             msg_id = data["id"]
@@ -115,14 +116,14 @@ def run():
                 if res.status_code == 200:
                     msg_map[code]["status"] = "EXPIRED"
                     msg_map[code]["last_content"] = expired_content
-                    print(f"💀 Marked Expired: {code}")
+                    print(f"💀 Marked as Expired: {code}")
             except Exception as e:
-                print(f"❌ Edit Error: {e}")
+                print(f"❌ Retraction Edit Error: {e}")
 
-    # 3. Save Memory
+    # 3. Save Context State Tracking Cache
     with open(ID_MAP_FILE, "w") as f:
         json.dump(msg_map, f, indent=4)
-    print("Run complete.")
+    print("Process execution runtime finalized.")
 
 if __name__ == "__main__":
     run()
