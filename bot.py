@@ -2,28 +2,13 @@ import cloudscraper
 import re
 import os
 import json
-from datetime import datetime
 import requests
 
 # --- CONFIGURATION ---
 URL = "https://kingshot.net/gift-codes"
 WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK")
 ID_MAP_FILE = "message_ids.json"
-ROLE_ID = "1469321868589793429" 
-
-def get_discord_timestamp(expiry_date_str):
-    """Converts MM/DD/YYYY to Discord Relative Timestamp <t:unix:R>."""
-    try:
-        clean_str = expiry_date_str.strip()
-        # Strictly ensure it's a valid date pattern (e.g. MM/DD/YYYY)
-        if not re.match(r'^\d{1,2}/\d{1,2}/\d{4}$', clean_str):
-            return None
-            
-        dt = datetime.strptime(clean_str, "%m/%d/%Y")
-        return f"<t:{int(dt.timestamp())}:R>"
-    except Exception as e:
-        print(f"Date Parse Error: {e}")
-        return None
+ROLE_ID = "1479493265756524625" 
 
 def get_code_data():
     try:
@@ -39,28 +24,22 @@ def get_code_data():
             
         html = response.text
         
-        # 1. Split the HTML into individual card blocks so we can inspect them one by one
-        # This prevents missing a code just because it lacks an "Expires" row.
+        # Isolate individual card elements so codes are captured even if they lack expiration HTML lines
         card_pattern = r'(font-mono text-xl font-bold tracking-wider">.*?<\/div>\s*<\/div>\s*<\/div>)'
         cards = re.findall(card_pattern, html, re.DOTALL)
         
         results = []
         for card in cards:
-            # 2. Extract the Gift Code Name
             code_match = re.search(r'font-mono text-xl font-bold tracking-wider">(.*?)<\/p>', card)
             if not code_match:
                 continue
             code = code_match.group(1).strip()
             
-            # 3. Check if an Expiry row actually exists inside this specific card block
-            expiry_match = re.search(r'Expires:\s*([\d/]+)<\/span>', card)
-            
-            if expiry_match:
-                time_tag = get_discord_timestamp(expiry_match.group(1))
-            else:
-                time_tag = None  # No date text printed on the card at all!
+            # Extract date explicitly ONLY if it is an actual date string format (MM/DD/YYYY)
+            expiry_match = re.search(r'Expires:\s*(\d{1,2}/\d{1,2}/\d{4})<\/span>', card)
+            expiry = expiry_match.group(1) if expiry_match else None
                 
-            results.append({"code": code, "time_tag": time_tag})
+            results.append({"code": code, "expiry": expiry})
             
         print(f"Success! Found {len(results)} active codes on site.")
         return results
@@ -91,11 +70,11 @@ def run():
     # --- PART A: Handle New or Still Active Codes ---
     for code in reversed(list(active_codes_on_site.keys())):
         item = active_codes_on_site[code]
-        time_tag = item["time_tag"]
+        expiry = item["expiry"]
         
-        # Format the message safely
-        if time_tag:
-            content = f"<@&{ROLE_ID}> new code: `{code}` - expires {time_tag}"
+        # Construct content string safely based on real dates
+        if expiry:
+            content = f"<@&{ROLE_ID}> new code: `{code}` - expires {expiry}"
         else:
             content = f"<@&{ROLE_ID}> new code: `{code}`"
 
@@ -111,7 +90,7 @@ def run():
                 print(f"❌ Post Error: {e}")
         
         else:
-            # FORCE UPDATE: If the message exists but contains old text, fix it immediately!
+            # Correct structural text on messages already active in the tracking cache
             msg_id = msg_map[code]["id"]
             last_content = msg_map[code].get("last_content", "")
             
@@ -121,9 +100,9 @@ def run():
                     if res.status_code == 200:
                         msg_map[code]["status"] = "ACTIVE"
                         msg_map[code]["last_content"] = content
-                        print(f"🔄 Corrected message text for: {code}")
-                except Exception as e:
-                    print(f"❌ Update Error: {e}")
+                        print(f"🔄 Corrected text data for active code: {code}")
+                except:
+                    pass
 
     # --- PART B: Handle Expired Codes (Gone from site) ---
     for code, data in msg_map.items():
