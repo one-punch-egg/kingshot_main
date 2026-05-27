@@ -1,7 +1,8 @@
 {
     "KINGSTORE210": {
         "id": "1471822043354894511",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `KINGSTORE210`"
     },
     "THANKSJP26": {
         "id": "1471822044369915995",
@@ -21,7 +22,8 @@
     },
     "RAMADAN": {
         "id": "1473357167624065088",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `RAMADAN`"
     },
     "KS0225": {
         "id": "1476125399921590355",
@@ -41,11 +43,13 @@
     },
     "VIP777": {
         "id": "1477972576813842506",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `VIP777` - expires <t:1798675200:R>"
     },
     "THUR0305": {
         "id": "1479098767020920984",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `THUR0305`"
     },
     "CELEBRATEHER": {
         "id": "1480175834672140388",
@@ -57,7 +61,8 @@
     },
     "KS0315": {
         "id": "1482608472796172371",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `KS0315`"
     },
     "OFFICIALSTORE": {
         "id": "1483301437105504300",
@@ -73,7 +78,8 @@
     },
     "syunnbun26jp": {
         "id": "1484477950245212234",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `syunnbun26jp`"
     },
     "FIREFRIDAY": {
         "id": "1486973163173580921",
@@ -89,7 +95,8 @@
     },
     "NOFOOLIN": {
         "id": "1488871917363400796",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `NOFOOLIN`"
     },
     "BUNNY405": {
         "id": "1490170466298757254",
@@ -105,7 +112,8 @@
     },
     "KSPRAWNING": {
         "id": "1494916762238718003",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `KSPRAWNING`"
     },
     "KS0420": {
         "id": "1495670516655194263",
@@ -121,7 +129,8 @@
     },
     "KS0426": {
         "id": "1497827208818065469",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `KS0426`"
     },
     "KS0425": {
         "id": "1498092712291860520",
@@ -145,7 +154,8 @@
     },
     "BESTMOM2026": {
         "id": "1503005127613874246",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `BESTMOM2026`"
     },
     "LOVEFAMILY": {
         "id": "1504817040748183672",
@@ -165,7 +175,8 @@
     },
     "eK5B3kw7t": {
         "id": "1506384882505486547",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `eK5B3kw7t`"
     },
     "n4xeR7VGd": {
         "id": "1506386169045188671",
@@ -197,5 +208,95 @@
         "id": "1509167108964225186",
         "status": "ACTIVE",
         "last_content": "<@&1482141454607454308> new code: `EIDALADHA0527` - expires <t:1780185600:R>"
+    },
+    "LETSCLEANUP": {
+        "id": "1509179294167990564",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `LETSCLEANUP`"
+    },
+    "SORRYIMLATE": {
+        "id": "1509179295501652149",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `SORRYIMLATE`"
+    },
+    "GIVEUAGIFT": {
+        "id": "1509179296881704960",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `GIVEUAGIFT`"
+    },
+    "1INAMILLION": {
+        "id": "1509179297733148703",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `1INAMILLION`"
+    },
+    "COFFEEPOWER": {
+        "id": "1509179298488254615",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `COFFEEPOWER`"
+    },
+    "tgs2025ks1st": {
+        "id": "1509179299503018057",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `tgs2025ks1st`"
+    },
+    "Gaecheonjeol": {
+        "id": "1509179300077768736",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `Gaecheonjeol`"
+    },
+    "Hangul2025": {
+        "id": "1509179301726261268",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `Hangul2025`"
+    },
+    "BONAPPETIT": {
+        "id": "1509179302694879303",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `BONAPPETIT`"
+    },
+    "TGIF1016": {
+        "id": "1509179303559041144",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `TGIF1016`"
+    },
+    "HALLOWEEN25": {
+        "id": "1509179304842494033",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `HALLOWEEN25`"
+    },
+    "pepero": {
+        "id": "1509179306281140324",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `pepero`"
+    },
+    "TGIFISBACK": {
+        "id": "1509179308340412436",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `TGIFISBACK`"
+    },
+    "THEKINGSTORE": {
+        "id": "1509179309758218331",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `THEKINGSTORE`"
+    },
+    "THURMADNESS": {
+        "id": "1509179311457046641",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `THURMADNESS`"
+    },
+    "ENERGY0112": {
+        "id": "1509179313092821245",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `ENERGY0112`"
+    },
+    "TACODE0127": {
+        "id": "1509179314875273238",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `TACODE0127`"
+    },
+    "TGIFBOOST26": {
+        "id": "1509179316594806785",
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `TGIFBOOST26`"
     }
 }
