@@ -82,7 +82,7 @@ def run():
         item = active_codes_on_site[code]
         time_tag = item["time_tag"]
         
-        # Format the message conditionally based on whether a valid countdown tag exists
+        # Format the message context safely
         if time_tag:
             content = f"<@&{ROLE_ID}> new code: `{code}` - expires {time_tag}"
         else:
@@ -94,19 +94,26 @@ def run():
                 res = session.post(f"{WEBHOOK_URL}?wait=true", json={"content": content})
                 if res.status_code in [200, 201]:
                     msg_id = res.json().get("id")
-                    msg_map[code] = {"id": msg_id, "status": "ACTIVE"}
+                    msg_map[code] = {"id": msg_id, "status": "ACTIVE", "last_content": content}
                     print(f"✅ Posted: {code}")
             except Exception as e:
                 print(f"❌ Post Error: {e}")
         
-        # Update existing message if it was previously marked Expired
-        elif msg_map[code].get("status") == "EXPIRED":
+        else:
+            # FORCE UPDATE: If the message exists but contains old bad text (like "7 months"),
+            # we force a PATCH to clean it up right away.
             msg_id = msg_map[code]["id"]
-            try:
-                session.patch(f"{WEBHOOK_URL}/messages/{msg_id}", json={"content": content})
-                msg_map[code]["status"] = "ACTIVE"
-                print(f"🔄 Reactivated: {code}")
-            except: pass
+            last_content = msg_map[code].get("last_content", "")
+            
+            if msg_map[code].get("status") == "EXPIRED" or last_content != content:
+                try:
+                    res = session.patch(f"{WEBHOOK_URL}/messages/{msg_id}", json={"content": content})
+                    if res.status_code == 200:
+                        msg_map[code]["status"] = "ACTIVE"
+                        msg_map[code]["last_content"] = content
+                        print(f"🔄 Cleaned/Updated message for: {code}")
+                except Exception as e:
+                    print(f"❌ Update Error: {e}")
 
     # --- PART B: Handle Expired Codes (Gone from site) ---
     for code, data in msg_map.items():
@@ -122,6 +129,7 @@ def run():
                 res = session.patch(f"{WEBHOOK_URL}/messages/{msg_id}", json={"content": expired_content})
                 if res.status_code == 200:
                     msg_map[code]["status"] = "EXPIRED"
+                    msg_map[code]["last_content"] = expired_content
                     print(f"💀 Marked Expired: {code}")
             except Exception as e:
                 print(f"❌ Edit Error: {e}")
