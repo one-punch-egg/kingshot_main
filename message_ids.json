@@ -17,7 +17,7 @@
     "LOVEKS2026": {
         "id": "1472007021711589397",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `LOVEKS2026`"
+        "last_content": "<@&1469321868589793429> new code: `LOVEKS2026`"
     },
     "SPRINGFES217": {
         "id": "1473261533122527249",
@@ -54,7 +54,7 @@
     "THUR0305": {
         "id": "1479098767020920984",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `THUR0305`"
+        "last_content": "<@&1469321868589793429> new code: `THUR0305`"
     },
     "CELEBRATEHER": {
         "id": "1480175834672140388",
@@ -105,7 +105,7 @@
     "NOFOOLIN": {
         "id": "1488871917363400796",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `NOFOOLIN`"
+        "last_content": "<@&1469321868589793429> new code: `NOFOOLIN`"
     },
     "BUNNY405": {
         "id": "1490170466298757254",
@@ -128,7 +128,8 @@
     },
     "KS0420": {
         "id": "1495670516655194263",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `KS0420`"
     },
     "LOVETHEPLANET": {
         "id": "1496482083541876736",
@@ -184,7 +185,8 @@
     },
     "KS0518": {
         "id": "1505816120974643262",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `KS0518`"
     },
     "847EadKex": {
         "id": "1506193638139629619",
@@ -217,7 +219,7 @@
     "KS0524": {
         "id": "1507961544267399310",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `KS0524`"
+        "last_content": "<@&1469321868589793429> new code: `KS0524`"
     },
     "OFFICIALSTORE27": {
         "id": "1508659911767101631",
@@ -272,22 +274,22 @@
     "BONAPPETIT": {
         "id": "1509179302694879303",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `BONAPPETIT`"
+        "last_content": "<@&1469321868589793429> new code: `BONAPPETIT`"
     },
     "TGIF1016": {
         "id": "1509179303559041144",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `TGIF1016`"
+        "last_content": "<@&1469321868589793429> new code: `TGIF1016`"
     },
     "HALLOWEEN25": {
         "id": "1509179304842494033",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `HALLOWEEN25`"
+        "last_content": "<@&1469321868589793429> new code: `HALLOWEEN25`"
     },
     "pepero": {
         "id": "1509179306281140324",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `pepero`"
+        "last_content": "<@&1469321868589793429> new code: `pepero`"
     },
     "TGIFISBACK": {
         "id": "1509179308340412436",
@@ -302,7 +304,7 @@
     "THURMADNESS": {
         "id": "1509179311457046641",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `THURMADNESS`"
+        "last_content": "<@&1469321868589793429> new code: `THURMADNESS`"
     },
     "ENERGY0112": {
         "id": "1509179313092821245",
@@ -327,7 +329,7 @@
     "TRICKORTREAT": {
         "id": "1509179507268128934",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `TRICKORTREAT`"
+        "last_content": "<@&1469321868589793429> new code: `TRICKORTREAT`"
     },
     "JackKaoAndKS": {
         "id": "1509179509470138478",
@@ -337,7 +339,7 @@
     "TGIF1107": {
         "id": "1509179511025959004",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `TGIF1107`"
+        "last_content": "<@&1469321868589793429> new code: `TGIF1107`"
     },
     "KSDC400K": {
         "id": "1509179511663759411",
@@ -347,7 +349,7 @@
     "HELLOWORLD25": {
         "id": "1509179512276127794",
         "status": "ACTIVE",
-        "last_content": "<@&1482141454607454308> new code: `HELLOWORLD25`"
+        "last_content": "<@&1469321868589793429> new code: `HELLOWORLD25`"
     },
     "TOGOVERNOR": {
         "id": "1509179513668370532",
