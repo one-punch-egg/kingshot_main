@@ -2,23 +2,13 @@ import cloudscraper
 import re
 import os
 import json
-from datetime import datetime
 import requests
 
 # --- CONFIGURATION ---
 URL = "https://kingshot.net/gift-codes"
 WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK")
 ID_MAP_FILE = "message_ids.json"
-ROLE_ID = "1482141454607454308" 
-
-def get_discord_timestamp(expiry_date_str):
-    """Converts MM/DD/YYYY to Discord Relative Timestamp <t:unix:R>"""
-    try:
-        dt = datetime.strptime(expiry_date_str.strip(), "%m/%d/%Y")
-        return f"<t:{int(dt.timestamp())}:R>"
-    except Exception as e:
-        print(f"Date Parse Error: {e}")
-        return None
+ROLE_ID = "1469321868589793429" 
 
 def get_code_data():
     try:
@@ -33,15 +23,23 @@ def get_code_data():
             return []
             
         html = response.text
-        # Matches the specific HTML structure you provided
+        # Matches the specific HTML structure provided
         pattern = r'font-mono text-xl font-bold tracking-wider">(.*?)<\/p>.*?Expires: (.*?)<\/span>'
         matches = re.findall(pattern, html, re.DOTALL)
         
         results = []
         for code_text, expiry_date in matches:
             code = code_text.strip()
-            time_tag = get_discord_timestamp(expiry_date)
-            results.append({"code": code, "time_tag": time_tag})
+            raw_expiry = expiry_date.strip()
+            
+            # CRITICAL FIX: Only treat it as an expiry date if it matches a date format (like MM/DD/YYYY)
+            # If it says "7 months", text, or is empty, we set it to None so we don't post misinformation.
+            if re.match(r'^\d{1,2}/\d{1,2}/\d{4}$', raw_expiry):
+                expiry = f"expires {raw_expiry}"
+            else:
+                expiry = None 
+                
+            results.append({"code": code, "expiry": expiry})
             
         print(f"Success! Found {len(results)} active codes on site.")
         return results
@@ -70,15 +68,15 @@ def run():
     session = requests.Session()
 
     # --- PART A: Handle New or Still Active Codes ---
-    # We iterate reversed so new codes appear at the bottom of the channel
     for code in reversed(list(active_codes_on_site.keys())):
         item = active_codes_on_site[code]
-        time_tag = item["time_tag"] or "Unknown"
+        expiry = item["expiry"]
         
-        # Formatting for ACTIVE status
-        content = (
-            f"<@&{ROLE_ID}> new code: `{code}` - expires {time_tag}"
-        )
+        # Build message context dynamically based on whether a real date exists
+        if expiry:
+            content = f"<@&{ROLE_ID}> new code: `{code}` - {expiry}"
+        else:
+            content = f"<@&{ROLE_ID}> new code: `{code}`"
 
         if code not in msg_map:
             # POST NEW
@@ -91,7 +89,7 @@ def run():
             except Exception as e:
                 print(f"❌ Post Error: {e}")
         
-        # Optional: Update existing message if it was previously marked Expired
+        # Update existing message if it was previously marked Expired
         elif msg_map[code].get("status") == "EXPIRED":
             msg_id = msg_map[code]["id"]
             try:
@@ -105,7 +103,7 @@ def run():
         if code not in active_codes_on_site and data.get("status") == "ACTIVE":
             msg_id = data["id"]
             
-            # Formatting for EXPIRED status (Removes the countdown)
+            # Formatting for EXPIRED status
             expired_content = (
                 f"code: `{code}` has **EXPIRED ❌**"
             )
