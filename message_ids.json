@@ -125,7 +125,7 @@
     },
     "KS0425": {
         "id": "1498092712291860520",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "OFFICIALSTORE9": {
         "id": "1498505447668322374",
@@ -133,7 +133,7 @@
     },
     "KSGW26JP": {
         "id": "1499339726128418897",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "WORKERPOWER": {
         "id": "1499736041848963143",
@@ -145,11 +145,11 @@
     },
     "BESTMOM2026": {
         "id": "1503005127613874246",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "LOVEFAMILY": {
         "id": "1504817040748183672",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "OFFICIALSTORE516": {
         "id": "1505179425904267365",
@@ -161,7 +161,7 @@
     },
     "847EadKex": {
         "id": "1506193638139629619",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "eK5B3kw7t": {
         "id": "1506384882505486547",
@@ -182,5 +182,17 @@
     "rK9e6vKXu": {
         "id": "1506802653131444306",
         "status": "EXPIRED"
+    },
+    "KS0524": {
+        "id": "1509205089024348213",
+        "status": "ACTIVE"
+    },
+    "OFFICIALSTORE27": {
+        "id": "1509205089771061330",
+        "status": "ACTIVE"
+    },
+    "EIDALADHA0527": {
+        "id": "1509205090936946688",
+        "status": "ACTIVE"
     }
 }
