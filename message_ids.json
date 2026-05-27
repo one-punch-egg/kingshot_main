@@ -5,7 +5,8 @@
     },
     "THANKSJP26": {
         "id": "1471822044369915995",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `THANKSJP26`"
     },
     "KS260213": {
         "id": "1471822045603172363",
@@ -29,7 +30,8 @@
     },
     "ITSFRIDAY227": {
         "id": "1476913092431708182",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `ITSFRIDAY227`"
     },
     "KS0302": {
         "id": "1477933563663093851",
@@ -57,7 +59,8 @@
     },
     "KS0315": {
         "id": "1482608472796172371",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `KS0315`"
     },
     "OFFICIALSTORE": {
         "id": "1483301437105504300",
@@ -85,7 +88,8 @@
     },
     "OFFICIALSTORE04": {
         "id": "1488720927184257219",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `OFFICIALSTORE04`"
     },
     "NOFOOLIN": {
         "id": "1488871917363400796",
@@ -113,7 +117,8 @@
     },
     "LOVETHEPLANET": {
         "id": "1496482083541876736",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `LOVETHEPLANET`"
     },
     "0425FORU": {
         "id": "1497408183923245086",
@@ -141,7 +146,8 @@
     },
     "Childrenday0505": {
         "id": "1501063600343879750",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `Childrenday0505`"
     },
     "BESTMOM2026": {
         "id": "1503005127613874246",
@@ -153,7 +159,8 @@
     },
     "OFFICIALSTORE516": {
         "id": "1505179425904267365",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `OFFICIALSTORE516`"
     },
     "KS0518": {
         "id": "1505816120974643262",
@@ -173,7 +180,8 @@
     },
     "X43Q2EKBq": {
         "id": "1506391216256712706",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `X43Q2EKBq`"
     },
     "Bw8NanVq8": {
         "id": "1506674316115316757",
@@ -194,5 +202,90 @@
     "EIDALADHA0527": {
         "id": "1509167108964225186",
         "status": "ACTIVE"
+    },
+    "LETSCLEANUP": {
+        "id": "1509182744922689557",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `LETSCLEANUP`"
+    },
+    "SORRYIMLATE": {
+        "id": "1509182745249710083",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `SORRYIMLATE`"
+    },
+    "GIVEUAGIFT": {
+        "id": "1509182746562527265",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `GIVEUAGIFT`"
+    },
+    "1INAMILLION": {
+        "id": "1509182748655489156",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `1INAMILLION`"
+    },
+    "COFFEEPOWER": {
+        "id": "1509182749024587998",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `COFFEEPOWER`"
+    },
+    "tgs2025ks1st": {
+        "id": "1509182750845042780",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `tgs2025ks1st`"
+    },
+    "Gaecheonjeol": {
+        "id": "1509182751709069392",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `Gaecheonjeol`"
+    },
+    "Hangul2025": {
+        "id": "1509182752325636266",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `Hangul2025`"
+    },
+    "BONAPPETIT": {
+        "id": "1509182752958709900",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `BONAPPETIT`"
+    },
+    "TGIF1016": {
+        "id": "1509182753500037201",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `TGIF1016`"
+    },
+    "pepero": {
+        "id": "1509182755181953074",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `pepero`"
+    },
+    "TGIFISBACK": {
+        "id": "1509182756813410436",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `TGIFISBACK`"
+    },
+    "SEEYOUIN2026": {
+        "id": "1509182759510343821",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `SEEYOUIN2026`"
+    },
+    "THURMADNESS": {
+        "id": "1509182761703837827",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `THURMADNESS`"
+    },
+    "jpseijin26": {
+        "id": "1509182762786230312",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `jpseijin26`"
+    },
+    "KINGDOMSTAR": {
+        "id": "1509182763859837010",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `KINGDOMSTAR`"
+    },
+    "TACODE0127": {
+        "id": "1509182765009211464",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `TACODE0127`"
     }
 }
