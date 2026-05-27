@@ -185,14 +185,17 @@
     },
     "KS0524": {
         "id": "1507961544267399310",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `KS0524` - expires <t:1798675200:R>"
     },
     "OFFICIALSTORE27": {
         "id": "1508659911767101631",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `OFFICIALSTORE27` - expires <t:1780358400:R>"
     },
     "EIDALADHA0527": {
         "id": "1509167108964225186",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "last_content": "<@&1482141454607454308> new code: `EIDALADHA0527` - expires <t:1780185600:R>"
     }
 }
