@@ -1,7 +1,8 @@
 {
     "KINGSTORE210": {
         "id": "1471822043354894511",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `KINGSTORE210`"
     },
     "THANKSJP26": {
         "id": "1471822044369915995",
@@ -18,7 +19,8 @@
     },
     "SPRINGFES217": {
         "id": "1473261533122527249",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `SPRINGFES217`"
     },
     "RAMADAN": {
         "id": "1473357167624065088",
@@ -35,7 +37,8 @@
     },
     "KS0302": {
         "id": "1477933563663093851",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `KS0302`"
     },
     "0302FORU": {
         "id": "1477933565437153412",
@@ -43,7 +46,8 @@
     },
     "VIP777": {
         "id": "1477972576813842506",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `VIP777` - expires 12/31/2026"
     },
     "THUR0305": {
         "id": "1479098767020920984",
@@ -64,7 +68,8 @@
     },
     "OFFICIALSTORE": {
         "id": "1483301437105504300",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `OFFICIALSTORE`"
     },
     "KINGSHOTHBD": {
         "id": "1483423510570205314",
@@ -93,7 +98,8 @@
     },
     "NOFOOLIN": {
         "id": "1488871917363400796",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `NOFOOLIN`"
     },
     "BUNNY405": {
         "id": "1490170466298757254",
@@ -122,7 +128,8 @@
     },
     "0425FORU": {
         "id": "1497408183923245086",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `0425FORU`"
     },
     "KS0426": {
         "id": "1497827208818065469",
@@ -155,7 +162,8 @@
     },
     "LOVEFAMILY": {
         "id": "1504817040748183672",
-        "status": "EXPIRED"
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `LOVEFAMILY`"
     },
     "OFFICIALSTORE516": {
         "id": "1505179425904267365",
@@ -287,5 +295,55 @@
         "id": "1509182765009211464",
         "status": "ACTIVE",
         "last_content": "<@&1469321868589793429> new code: `TACODE0127`"
+    },
+    "KS2025award": {
+        "id": "1509183227640811754",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `KS2025award`"
+    },
+    "TRICKORTREAT": {
+        "id": "1509183228437856399",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `TRICKORTREAT`"
+    },
+    "HALLOWEEN25": {
+        "id": "1509183229314334801",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `HALLOWEEN25`"
+    },
+    "JackKaoAndKS": {
+        "id": "1509183230149001389",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `JackKaoAndKS`"
+    },
+    "TGIF1107": {
+        "id": "1509183231021416539",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `TGIF1107`"
+    },
+    "KSDC400K": {
+        "id": "1509183232170524672",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `KSDC400K`"
+    },
+    "HELLOWORLD25": {
+        "id": "1509183232770314332",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `HELLOWORLD25`"
+    },
+    "TOGOVERNOR": {
+        "id": "1509183233873412207",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `TOGOVERNOR`"
+    },
+    "casualgame25": {
+        "id": "1509183234540310548",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `casualgame25`"
+    },
+    "ENERGY0112": {
+        "id": "1509183236075425812",
+        "status": "ACTIVE",
+        "last_content": "<@&1469321868589793429> new code: `ENERGY0112`"
     }
 }
