@@ -213,7 +213,7 @@
     },
     "Kingshot888": {
         "id": "1512010788598972573",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "PROTECTNATURE": {
         "id": "1512427253672313083",
@@ -226,5 +226,9 @@
     "eK53x8q4c": {
         "id": "1514248011952422972",
         "status": "EXPIRED"
+    },
+    "KS0615": {
+        "id": "1515970595039477771",
+        "status": "ACTIVE"
     }
 }
