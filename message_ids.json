@@ -397,6 +397,10 @@
     },
     "KS0919": {
         "id": "1550679122852712469",
+        "status": "EXPIRED"
+    },
+    "JPHolidaySEP": {
+        "id": "1551163746586468445",
         "status": "ACTIVE"
     }
 }
