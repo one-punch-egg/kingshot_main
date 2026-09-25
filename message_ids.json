@@ -213,7 +213,7 @@
     },
     "Kingshot888": {
         "id": "1512010788598972573",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "PROTECTNATURE": {
         "id": "1512427253672313083",
@@ -402,5 +402,9 @@
     "JPHolidaySEP": {
         "id": "1551163746586468445",
         "status": "EXPIRED"
+    },
+    "MIDAUTUMN26": {
+        "id": "1553014551191097396",
+        "status": "ACTIVE"
     }
 }
