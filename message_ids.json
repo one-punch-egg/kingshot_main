@@ -429,6 +429,10 @@
     },
     "WELLDONE": {
         "id": "1556638422238629929",
+        "status": "EXPIRED"
+    },
+    "Hangul2026": {
+        "id": "1558021258757799988",
         "status": "ACTIVE"
     }
 }
