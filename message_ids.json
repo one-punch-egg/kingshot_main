@@ -433,14 +433,14 @@
     },
     "Hangul2026": {
         "id": "1558021258757799988",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "CHALLENGE26": {
         "id": "1559129834981032047",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     },
     "IG200KS": {
         "id": "1559417975080095786",
-        "status": "ACTIVE"
+        "status": "EXPIRED"
     }
 }
